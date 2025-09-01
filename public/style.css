@@ -242,6 +242,7 @@ a {
 .disc-con {
     height: 35vh;
     justify-content: space-around;
+    flex-wrap: wrap;   
 }
 
 .disc {
@@ -251,12 +252,18 @@ a {
     text-align: center;
     flex-direction: column;
     gap: 3vh;
+    padding: .5rem;
 }
 
 .disc > p {
     font-size: 1.3rem;
     font-weight: 500;
 }
+
+.disc-1 > h2 {color: rgb(187, 0, 0);}
+.disc-2 > h2 {color: rgb(0, 130, 182);}
+.disc-3 > h2 {color: rgb(99, 84, 0);}
+.disc-4 > h2 {color: rgb(13, 54, 0);}
 
 .graphic-con-2  {
     width: 100%;
@@ -278,7 +285,7 @@ a {
 .section-3 {
     /* background: url("images/bg/bg-3.png") center / cover no-repeat; */
     position: relative;
-    padding-top: 20vh;
+    padding-top: 30vh;
 }
 
 .main-text {
@@ -305,14 +312,14 @@ a {
 .graphic-kid {
     width: 130%;
     position: relative;
-    top: 20vh;
+    top: 40vh;
 }
 /* ------------------------------------------ */
 
 
 /* ----------------- Footer ----------------- */
 .main-footer {
-    height: 35vh;
+    height: 20vh;
     z-index: 20;
 }
 /* ------------------------------------------ */
@@ -429,7 +436,127 @@ a {
 /* ------------ Media Query --------------- */
 
 @media (max-width: 800px) {
+    .nav-1, .nav-3 {
+        width: 48%;
+    }
 
+    .link {
+        width: 33%;
+    }
+
+    .nav-svg {
+        display: none;
+    }
+
+    .text-con > h2{
+        font-size: 2rem;
+        transform: translateY(25%);
+    }
+
+    .text-con > h1{
+        font-size: 6rem;
+    }
+
+    .disc {
+        margin-top: 2vh;
+        width: 42%;
+        height: 25vh;
+    }
+
+    .disc > p{
+        font-size: 1rem;
+    }
+
+    .graphic-earth {
+        width: 70vh;
+        top: 53vh;
+    } 
+}
+
+@media (max-width: 600px) {
+    .nav-1, .nav-3 {
+        width: 48%;
+    }
+
+    .link {
+        width: 33%;
+    }
+
+    .nav-svg {
+        display: none;
+    }
+
+    .text-con > h2{
+        font-size: 1.8rem;
+        transform: translateY(20%);
+    }
+
+    .text-con > h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .disc {
+        width: 90%;
+        height: 15vh;
+    }
+
+    .disc > p{
+        font-size: 1rem;
+    }
+
+    .graphic-earth {
+        width: 45vh;
+        top: 69.5vh;
+        margin-top: 1vh;
+    } 
+
+    .main-text {
+        gap: 5vh;
+    }
+
+    .main-text > p {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+
+    .motto-par {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .graphic {
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .link {
+        font-size: .7rem;
+    }
+
+    .graphic-earth {
+        width: 77%;
+        top: 74.8vh;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .link > a{
+        display: none;
+    }
+
+    .nav-svg {
+        display: block;
+        transform: scale(300%);
+    }
 }
 
 /* ----------------------------------------- */
