@@ -386,7 +386,7 @@ a {
 .bottom-up-slow {
     animation: botton-up-view linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 50%;
 }
 
 @keyframes arch-bottom-right {
