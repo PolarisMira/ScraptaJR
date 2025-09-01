@@ -380,13 +380,13 @@ a {
 .bottom-up {
     animation: botton-up-view linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 40%;
 }
 
 .bottom-up-slow {
     animation: botton-up-view linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 40%;
 }
 
 @keyframes arch-bottom-right {
@@ -422,13 +422,13 @@ a {
 .arch-bottom-left {
     animation: arch-bottom-left linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 40%;
 }
 
 .arch-bottom-right {
     animation: arch-bottom-right linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 40%;
 }
 
 /* ------------------------------------------- */
