@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: url("images/bg/full-bg.png") center / cover no-repeat;
+    background: url("images/bg/Scrapta-JR-BG.png") center / cover no-repeat;
 }
 
 /* -------------- varaibles ---------------- */
@@ -52,11 +52,11 @@ body {
 
 /* ---------------- Nav Bar ----------------- */
 .nav-bar {
-    height: 6vh;
+    height: 8vh;
     justify-content: space-between;
     border: 2px solid black;
     box-shadow: 1px 1px 15px white;
-    background: linear-gradient(90deg, #f5963d 0%, #e6aa12 100%);
+    background: linear-gradient(90deg, #ffb300 0%, #e6aa12 100%);
     position: fixed;
     top: 0;
     z-index: 100;
@@ -117,7 +117,7 @@ a {
 
 #nav-logo {
     width: 20%;
-    transform: scale(130%);
+    transform: scale(85%);
 }
 /* ------------------------------------------ */
 
@@ -141,7 +141,8 @@ a {
 .text-con {
     color: white;
     flex-direction: column;
-    height: 40vh;
+    height: 55vh;
+    text-shadow: 1px 1px 10px black;
 }
 
 .text-con > h2 {
@@ -152,6 +153,12 @@ a {
 .text-con >  h1{
     font-size: 7.5rem;
     letter-spacing: .5rem;
+    color:#e23535;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 
@@ -165,7 +172,6 @@ a {
     border-left: 10px;
     color: rgb(109, 73, 73);
     font-weight: 1000;
-    margin-top: 5vh;
     transform: scale(100%);
     transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
     z-index: 10;
@@ -196,9 +202,14 @@ a {
 .motto-con {
     color: white;
     font-size: 1.5rem;
-    font-weight: 1000;
+    /* font-weight: 1000; */
     font-style: italic;
     margin-top: 10vh;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    /* font-style: normal; */
+    font-variation-settings:
+        "wdth" 100;
 }
 
 .graphics-con {
@@ -321,6 +332,7 @@ a {
 .main-footer {
     height: 20vh;
     z-index: 20;
+    text-align: center;
 }
 /* ------------------------------------------ */
 

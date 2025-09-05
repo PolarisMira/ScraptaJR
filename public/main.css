@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("images/bg/Home.png") center / cover no-repeat fixed;
+}
+
+.main-header {
+    height: 8vh;
+    border: 2px solid black;
+    box-shadow: 1px 1px 15px white;
+    background: linear-gradient(90deg, #f5963d 0%, #e6aa12 100%);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+/* ----------------- Varaible ------------------- */
+
+.orange {
+    background-color: #feb704;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------------------- */
+
+/* --------------- Main Selection --------------- */
+.select-bar {
+    flex-direction: column;
+}
+
+.select {
+    
+}
+/* ---------------------------------------------- */
