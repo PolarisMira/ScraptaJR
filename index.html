@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Scrapta Jr.</title>
         <link rel="stylesheet" href="public/style.css">
+        <link rel="stylesheet" href="public/animation.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
@@ -17,42 +18,79 @@
         <nav class="nav-bar orange flex">
 
             <div class="nav-con nav-1 flex">
-                <img id="nav-logo" src="public/images/graphic/Scrapta Jr. Logo.png" alt="logo">
-                <a href="#main"><div class="hover-scale name">Scrapa JR.</div></a>
+                <img class="yellow" id="nav-logo" src="public/images/graphic/Scrapta-logo-WB.png" alt="logo">
+                <a href="#main"><div class="hover-scale name">Scrapta JR.</div></a>
             </div>
-
 
             <div class="nav-con nav-3 flex">
-                <div class="link-1 link flex hover-scale">
-                    <a href="#discover">Discover</a>
+
+                <a href="#feature" class="link-1 link flex">
+                    <p class="hover-scale">Feature</p>
                     <img class="nav-svg" src="public/images/svg/discover.svg" alt="">
-                </div>
-                <div class="link-2 link flex hover-scale">
-                    <a href="#about">About</a>
+                </a>
+
+                <a href="#about" class="link-1 link flex">
+                    <p class="hover-scale">About</p>
                     <img class="nav-svg" src="public/images/svg/about.svg" alt="">
-                </div>
-                <div class="link-3 link flex hover-scale">
-                    <a href="#contact">Contact</a>
+                </a>
+                
+                <a href="#contact" class="link-3 link flex">
+                    <p class="hover-scale">Contact</p>
                     <img class="nav-svg" src="public/images/svg/discover.svg" alt="">
+                </a>
+            </div>
+
+            <div class="nav-con nav-4 flex">
+                <button class="h-nav-button flex" onclick="openBurgerNav()">
+                    <img class="nav-burger" src="public/images/svg/burger.svg" alt="">
+                </button>
+            </div>
+
+            <div class="hidden hamburger-nav flex">
+                <div class="h-link l-1 flex">
+                    <a href="#feature">
+                        <button class="h-button" onclick="hButton()">Feature</button>
+                    </a>
+                </div>
+                <div class="h-link l-2 flex">
+                    <a href="#about">
+                        <button class="h-button" onclick="hButton()">About</button>
+                    </a>
+                </div>
+                <div class="h-link l-3 flex">
+                    <a href="#contact">
+                        <button class="h-button" onclick="hButton()">Contact</button>
+                    </a>
                 </div>
             </div>
+
 
         </nav>
         
         <section class="main-sections section-1" id="main">
 
-            <div class="text-con flex">
-                <h2>Welcome To</h2>
-                <h1 class="hover-scale">Scrapta JR</h1>
+            <div class="upper-main-section flex">
+
+                <div class="text-con flex">
+                    <h2>Welcome To</h2>
+                    <h1 class="hover-scale">Scrapta JR</h1>
+                    <div class="button-con flex">
+                        <a href="main.html">
+                            <button class="learn-button zoom-in">
+                                Learn About E-Waste
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="logo-con flex">
+                    <img class="section-1-logo" src="public/images/graphic/Scrapta-logo.png" alt="">
+                </div>
+
+                
+
             </div>
             
-            <div class="button-con flex">
-                <a href="main.html">
-                    <button class="learn-button zoom-in">
-                        Start Learning!
-                    </button>
-                </a>
-            </div>
 
             <div class="motto-con flex">
                 <p class="motto-par hover-scale"> “Discover the Fun Side of E-Waste Learning!”</p>
@@ -66,7 +104,7 @@
 
         </section>
 
-        <section class="main-sections section-2" id="discover">
+        <section class="main-sections section-2" id="feature">
 
             <div class="disc-con flex">
                 <div class="disc disc-1 blue flex bottom-up-slow">
@@ -87,8 +125,8 @@
                 </div>
             </div>
             
-            <div class="graphic-con-2 flex">
-                <img class="graphic-earth bottom-up" src="public/images/graphic/earth.png" alt="">
+            <div class="graphic-con-2 flex ">
+                <img class="graphic-earth bottom-up hover-scale" src="public/images/graphic/earth.png" alt="">
             </div>
         </section>
 
